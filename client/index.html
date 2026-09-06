@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html><head><title>Job Portal</title>
+<style>body{font-family:Arial;background:#f4f4f4;padding:20px}.card{background:#fff;padding:15px;margin:10px 0;border-radius:8px}button{background:#007bff;color:#fff;padding:10px;border:none;border-radius:5px}</style>
+</head><body>
+<h1>💼 MERN Job Portal</h1>
+<div id="jobs">Loading jobs...</div>
+<script>
+fetch('/api/jobs').then(r=>r.json()).then(jobs=>{
+document.getElementById('jobs').innerHTML=jobs.map(j=>`<div class=card><h3>${j.title} @ ${j.company}</h3><p>${j.location} | ${j.salary}</p><p>${j.description}</p><button>Apply</button></div>`).join('')||'No jobs yet';
+});
+</script>
+</body></html>
