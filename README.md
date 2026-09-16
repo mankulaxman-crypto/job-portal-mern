@@ -15,6 +15,6 @@ A full stack job portal where users can search & apply for jobs, and admin can p
 - Responsive Design
 
 ## Live Demo
-Coming Soon
+https://job-portal-mern-rouge.vercel.app
 
-Built by Laxman Manku
+Built by Mankula Laxman | Full Stack Developer | github.com/mankulaxman-crypto
